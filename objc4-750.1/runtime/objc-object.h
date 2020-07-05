@@ -219,7 +219,7 @@ objc_object::initIsa(Class cls, bool nonpointer, bool hasCxxDtor)
         assert(!DisableNonpointerIsa);
         assert(!cls->instancesRequireRawIsa());
 
-        // 初始化一个心得isa_t结构体
+        // 初始化一个新的isa_t结构体
         isa_t newisa(0);
 
 #if SUPPORT_INDEXED_ISA
